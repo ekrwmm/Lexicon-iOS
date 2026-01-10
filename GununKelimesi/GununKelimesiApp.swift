@@ -9,6 +9,15 @@ import SwiftUI
 
 @main
 struct GununKelimesiApp: App {
+    
+    
+    
+    // Uygulama başladığında çalışacak kod
+        init() {
+            // İzin iste ve bildirimi kur
+            NotificationManager.shared.requestPermission()
+        }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

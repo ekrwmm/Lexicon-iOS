@@ -1,0 +1,39 @@
+
+[
+    {
+        "id": 1,
+        "term": "Hissikablelvuku",
+        "meaning": "Olacak bir şeyi henüz gerçekleşmeden önce hissetme, önsezi.",
+        "example": "İçimde sebebini bilmediğim bir hissikablelvuku var."
+    },
+    {
+        "id": 2,
+        "term": "Gökkubbe",
+        "meaning": "Gökyüzü, sema, felek.",
+        "example": "Baki kalan bu gökkubbe altında hoş bir seda imiş."
+    },
+    {
+        "id": 3,
+        "term": "Mütemadiyen",
+        "meaning": "Ara vermeden, sürekli olarak, devamlı.",
+        "example": "Mütemadiyen yağan yağmur şehri esir aldı."
+    },
+    {
+        "id": 4,
+        "term": "Serendipçe",
+        "meaning": "Aranmazken bulunan, mutlu ve sürpriz tesadüf.",
+        "example": "Hayatımın en güzel anları hep serendipçe gelişti."
+    },
+    {
+        "id": 5,
+        "term": "Yakamoz",
+        "meaning": "Denizde balıkların veya küreklerin kımıldanışıyla oluşan parıltı.",
+        "example": "Boğaz'daki yakamozları izlemek ruhuma iyi geliyor."
+    },
+    {
+        "id": 6,
+        "term": "Fevkalbeşer",
+        "meaning": "İnsanüstü, insanın gücünü veya sınırlarını aşan.",
+        "example": "Olaylara fevkalbeşer bir sabırla yaklaşıyordu."
+    }
+]

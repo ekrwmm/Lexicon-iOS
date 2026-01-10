@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D28E39152F12FB76001AE57C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28E39142F12FB76001AE57C /* WidgetKit.framework */; };
+		D28E39172F12FB76001AE57C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28E39162F12FB76001AE57C /* SwiftUI.framework */; };
+		D28E39222F12FB78001AE57C /* SozlukWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D28E39122F12FB76001AE57C /* SozlukWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		D28E39202F12FB78001AE57C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D802D12F12ED930079C720 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D28E39112F12FB76001AE57C;
+			remoteInfo = SozlukWidgetExtension;
+		};
 		D2D802E72F12ED970079C720 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D802D12F12ED930079C720 /* Project object */;
@@ -23,15 +36,90 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D28E39272F12FB78001AE57C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D28E39222F12FB78001AE57C /* SozlukWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D28E39122F12FB76001AE57C /* SozlukWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SozlukWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28E39142F12FB76001AE57C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D28E39162F12FB76001AE57C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D2D802D92F12ED930079C720 /* GununKelimesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GununKelimesi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D802E62F12ED970079C720 /* GununKelimesiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GununKelimesiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D802F02F12ED970079C720 /* GununKelimesiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GununKelimesiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D28E390A2F12F9A7001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesiTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLoader.swift,
+				Word.swift,
+				words.json,
+			);
+			target = D2D802E52F12ED970079C720 /* GununKelimesiTests */;
+		};
+		D28E390B2F12F9A7001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesiUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLoader.swift,
+				Word.swift,
+				words.json,
+			);
+			target = D2D802EF2F12ED970079C720 /* GununKelimesiUITests */;
+		};
+		D28E39262F12FB78001AE57C /* Exceptions for "SozlukWidget" folder in "SozlukWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D28E39112F12FB76001AE57C /* SozlukWidgetExtension */;
+		};
+		D28E39292F12FBA5001AE57C /* Exceptions for "GununKelimesi" folder in "SozlukWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DataLoader.swift,
+				Word.swift,
+				words.json,
+			);
+			target = D28E39112F12FB76001AE57C /* SozlukWidgetExtension */;
+		};
+		D28E39312F13193A001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D2D802D82F12ED930079C720 /* GununKelimesi */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		D28E39182F12FB76001AE57C /* SozlukWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D28E39262F12FB78001AE57C /* Exceptions for "SozlukWidget" folder in "SozlukWidgetExtension" target */,
+			);
+			path = SozlukWidget;
+			sourceTree = "<group>";
+		};
 		D2D802DB2F12ED930079C720 /* GununKelimesi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D28E39312F13193A001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesi" target */,
+				D28E390A2F12F9A7001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesiTests" target */,
+				D28E390B2F12F9A7001AE57C /* Exceptions for "GununKelimesi" folder in "GununKelimesiUITests" target */,
+				D28E39292F12FBA5001AE57C /* Exceptions for "GununKelimesi" folder in "SozlukWidgetExtension" target */,
+			);
 			path = GununKelimesi;
 			sourceTree = "<group>";
 		};
@@ -48,6 +136,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D28E390F2F12FB76001AE57C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D28E39172F12FB76001AE57C /* SwiftUI.framework in Frameworks */,
+				D28E39152F12FB76001AE57C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D802D62F12ED930079C720 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +169,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D28E39132F12FB76001AE57C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D28E39142F12FB76001AE57C /* WidgetKit.framework */,
+				D28E39162F12FB76001AE57C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2D802D02F12ED930079C720 = {
 			isa = PBXGroup;
 			children = (
 				D2D802DB2F12ED930079C720 /* GununKelimesi */,
 				D2D802E92F12ED970079C720 /* GununKelimesiTests */,
 				D2D802F32F12ED970079C720 /* GununKelimesiUITests */,
+				D28E39182F12FB76001AE57C /* SozlukWidget */,
+				D28E39132F12FB76001AE57C /* Frameworks */,
 				D2D802DA2F12ED930079C720 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +196,7 @@
 				D2D802D92F12ED930079C720 /* GununKelimesi.app */,
 				D2D802E62F12ED970079C720 /* GununKelimesiTests.xctest */,
 				D2D802F02F12ED970079C720 /* GununKelimesiUITests.xctest */,
+				D28E39122F12FB76001AE57C /* SozlukWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +204,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D28E39112F12FB76001AE57C /* SozlukWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D28E39232F12FB78001AE57C /* Build configuration list for PBXNativeTarget "SozlukWidgetExtension" */;
+			buildPhases = (
+				D28E390E2F12FB76001AE57C /* Sources */,
+				D28E390F2F12FB76001AE57C /* Frameworks */,
+				D28E39102F12FB76001AE57C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D28E39182F12FB76001AE57C /* SozlukWidget */,
+			);
+			name = SozlukWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SozlukWidgetExtension;
+			productReference = D28E39122F12FB76001AE57C /* SozlukWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D2D802D82F12ED930079C720 /* GununKelimesi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2D802FA2F12ED970079C720 /* Build configuration list for PBXNativeTarget "GununKelimesi" */;
@@ -102,10 +233,12 @@
 				D2D802D52F12ED930079C720 /* Sources */,
 				D2D802D62F12ED930079C720 /* Frameworks */,
 				D2D802D72F12ED930079C720 /* Resources */,
+				D28E39272F12FB78001AE57C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D28E39212F12FB78001AE57C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D2D802DB2F12ED930079C720 /* GununKelimesi */,
@@ -173,6 +306,9 @@
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
+					D28E39112F12FB76001AE57C = {
+						CreatedOnToolsVersion = 26.2;
+					};
 					D2D802D82F12ED930079C720 = {
 						CreatedOnToolsVersion = 26.2;
 					};
@@ -203,11 +339,19 @@
 				D2D802D82F12ED930079C720 /* GununKelimesi */,
 				D2D802E52F12ED970079C720 /* GununKelimesiTests */,
 				D2D802EF2F12ED970079C720 /* GununKelimesiUITests */,
+				D28E39112F12FB76001AE57C /* SozlukWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D28E39102F12FB76001AE57C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D802D72F12ED930079C720 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +376,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D28E390E2F12FB76001AE57C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D802D52F12ED930079C720 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +407,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D28E39212F12FB78001AE57C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D28E39112F12FB76001AE57C /* SozlukWidgetExtension */;
+			targetProxy = D28E39202F12FB78001AE57C /* PBXContainerItemProxy */;
+		};
 		D2D802E82F12ED970079C720 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2D802D82F12ED930079C720 /* GununKelimesi */;
@@ -269,6 +425,64 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D28E39242F12FB78001AE57C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SozlukWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexicon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekrwmm.GununKelimesi.SozlukWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D28E39252F12FB78001AE57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SozlukWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexicon;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekrwmm.GununKelimesi.SozlukWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D2D802F82F12ED970079C720 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +611,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GununKelimesi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexicon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +644,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GununKelimesi/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Lexicon;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -533,6 +751,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D28E39232F12FB78001AE57C /* Build configuration list for PBXNativeTarget "SozlukWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D28E39242F12FB78001AE57C /* Debug */,
+				D28E39252F12FB78001AE57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2D802D42F12ED930079C720 /* Build configuration list for PBXProject "GununKelimesi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
